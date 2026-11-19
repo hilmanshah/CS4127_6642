@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Info | Brunei Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="brand-home-link">BRUNEI</a></li>
+                    <li><a href="discover.html">Learn More</a></li>
+                    <li><a href="attractions.html">Must Try Experiences</a></li>
+                    <li><a href="visit.html" class="active">Travel Info</a></li>
+                    <li><a href="contact.html">What to Expect</a></li>
+                    <li><button id="theme-toggle" class="theme-toggle">Dark Mode</button></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Essential Travel Information</h2>
+        <p class="subsection-sub visit-intro-desc">Everything you need to know before touching down in Brunei Darussalam—from equatorial weather tips and entry requirements to local currency and convenient transport options.</p>
+
+        <h3 class="subsection-heading">Traveler Handbook</h3>
+        <p class="subsection-sub">Hover over any card below to reveal a preview image and click to enlarge.</p>
+
+        <!-- 2x2 Hover-Reveal Grid -->
+        <div class="visit-2x2-grid">
+            <div class="visit-hover-card">
+                <div class="visit-img-reveal">
+                    <img src="images/visit-climate.jpg" alt="Tropical weather and rainforest rain showers in Brunei" class="lightbox-trigger">
+                </div>
+                <div class="visit-hover-body">
+                    <h3 class="fancy-header">Tropical Climate</h3>
+                    <p>Brunei enjoys a warm equatorial climate year-round with steady daytime temperatures ranging between 28°C and 32°C. Lightweight, breathable fabrics are ideal, and packing a compact umbrella or light raincoat is recommended for occasional afternoon tropical downpours.</p>
+                </div>
+            </div>
+
+            <div class="visit-hover-card">
+                <div class="visit-img-reveal">
+                    <img src="images/visit-visa.jpg" alt="Brunei International Airport terminal and arrival requirements" class="lightbox-trigger">
+                </div>
+                <div class="visit-hover-body">
+                    <h3 class="fancy-header">Visa & Entry Requirements</h3>
+                    <p>Ensure your passport has a minimum validity of six months. Citizens from ASEAN member states, the United Kingdom, the European Union, the United States, and numerous other nations benefit from visa-free entry or straightforward visa-on-arrival processing at Brunei International Airport (BWN).</p>
+                </div>
+            </div>
+
+            <div class="visit-hover-card">
+                <div class="visit-img-reveal">
+                    <img src="images/visit-currency.jpg" alt="Brunei Dollar currency notes" class="lightbox-trigger">
+                </div>
+                <div class="visit-hover-body">
+                    <h3 class="fancy-header">Currency & Payments</h3>
+                    <p>The official legal tender is the Brunei Dollar (BND), which is equivalent to (1:1) with the Singapore Dollar (SGD). Singaporean notes are accepted interchangeably everywhere. Major credit cards are widely welcomed in hotels, shopping malls, and restaurants, though carrying cash is recommended for night markets and rural excursions.</p>
+                </div>
+            </div>
+
+            <div class="visit-hover-card">
+                <div class="visit-img-reveal">
+                    <img src="images/visit-transport.jpg" alt="Water taxi transport on Brunei river" class="lightbox-trigger">
+                </div>
+                <div class="visit-hover-body">
+                    <h3 class="fancy-header">Local Transit</h3>
+                    <p>Getting around Bandar Seri Begawan is efficient using the local ride-hailing mobile app <strong>Dart</strong>. For an authentic cultural experience, hail a traditional motorized wooden water taxi (<strong>tambang</strong>) along the Brunei River waterfront for a quick BND $1–$2 crossing directly into Kampong Ayer.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="subsection-heading">Official Tourism Portals</h3>
+        <p class="subsection-sub">Access verified government resources, flight schedules, and entry declarations.</p>
+
+        <!-- At least 3 external links required by brief -->
+        <div class="portal-bars">
+            <div class="portal-bar">
+                <div>
+                    <h4 class="fancy-header">Brunei Tourism Official Portal</h4>
+                    <p>Browse official travel itineraries, licensed tour operators, hotel directories, and seasonal heritage guides.</p>
+                </div>
+                <a href="https://www.bruneitourism.com" target="_blank" rel="noopener" class="portal-cta">Visit Portal →</a>
+            </div>
+
+            <div class="portal-bar">
+                <div>
+                    <h4 class="fancy-header">Royal Brunei Airlines</h4>
+                    <p>Check direct international connections, manage bookings, and explore curated Brunei stopover packages.</p>
+                </div>
+                <a href="https://www.flyroyalbrunei.com" target="_blank" rel="noopener" class="portal-cta">Book Flight →</a>
+            </div>
+
+            <div class="portal-bar">
+                <div>
+                    <h4 class="fancy-header">Immigration & National Registration Department</h4>
+                    <p>Verify up-to-date visa exemptions, E-Arrival Card registration, and customs regulations prior to departure.</p>
+                </div>
+                <a href="https://www.immigration.gov.bn" target="_blank" rel="noopener" class="portal-cta">Check Entry Rules →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">×</span>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <footer>
+        <p>© 2026 Ministry of Tourism, Brunei Darussalam. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

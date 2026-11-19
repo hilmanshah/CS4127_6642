@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunei | Official Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="brand-home-link active">BRUNEI</a></li>
+                    <li><a href="discover.html">Learn More</a></li>
+                    <li><a href="attractions.html">Must Try Experiences</a></li>
+                    <li><a href="visit.html">Travel Info</a></li>
+                    <li><a href="contact.html">What to Expect</a></li>
+                    <li><button id="theme-toggle" class="theme-toggle">Dark Mode</button></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grand Editorial Hero Section -->
+    <section class="hero-home">
+        <span class="vertical-brand">BRUNEI</span>
+        <div class="hero-content">
+            <span class="hero-badge">Negara Brunei Darussalam</span>
+            <h1 class="hero-editorial-title">Welcome to Brunei.</h1>
+            <p class="hero-editorial-sub">Explore the hidden green heart of Southeast Asia, from historical water settlements to untouched jungle canopy.</p>
+            <a href="#boarding-gate" class="hero-cta-btn">Board Your Journey ↓</a>
+        </div>
+    </section>
+
+    <!-- Exterior 2D Royal Brunei Airlines Side-Profile Plane -->
+    <main id="boarding-gate">
+        <div class="plane-showcase-header">
+            <h2>Boarding Gate: Choose Your Window</h2>
+            <p>Discover why Brunei is the Abode of Peace.</p>
+        </div>
+
+        <div class="rb-exterior-wrapper">
+            <svg class="rb-plane-svg" viewBox="0 0 1100 340" role="img" aria-label="2D side view of a Royal Brunei Airlines aircraft with clickable destination windows">
+                <defs>
+                    <linearGradient id="fuselageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff" />
+                        <stop offset="78%" stop-color="#f3f4f6" />
+                        <stop offset="100%" stop-color="#d1d5db" />
+                    </linearGradient>
+                    <linearGradient id="skyReflection" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" />
+                        <stop offset="100%" stop-color="#e0f2fe" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Swept-Back Vertical Tail Fin -->
+                <path d="M 880 125 L 1015 18 L 1065 18 L 1025 145 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+                <path d="M 920 92 L 1028 18 L 1044 18 L 955 110 Z" fill="#d4af37" />
+                <path d="M 955 110 L 1044 18 L 1062 18 L 995 128 Z" fill="#1b4d3e" />
+                <path d="M 985 168 L 1075 155 L 1082 167 L 995 182 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
+
+                <!-- Main Aircraft Fuselage Body -->
+                <path d="M 45 182 C 45 152, 115 122, 220 122 L 910 122 L 1035 148 C 1052 152, 1052 172, 1035 178 L 895 205 L 210 205 C 105 205, 45 196, 45 182 Z" fill="url(#fuselageGrad)" stroke="#cbd5e1" stroke-width="2.5" />
+
+                <!-- Royal Brunei Gold & Green Fuselage Cheatline Stripes -->
+                <path d="M 65 186 L 965 186 L 945 192 L 82 192 Z" fill="#d4af37" />
+                <path d="M 82 192 L 945 192 L 920 200 L 115 200 Z" fill="#1b4d3e" />
+
+                <!-- Cockpit Windshields -->
+                <path d="M 112 146 L 152 135 L 156 150 L 104 154 Z" fill="#0f172a" stroke="#d4af37" stroke-width="1.5" />
+                <path d="M 158 135 L 178 135 L 178 150 L 161 150 Z" fill="#1e293b" stroke="#d4af37" stroke-width="1.5" />
+
+                <!-- Royal Brunei Fuselage Title -->
+                <text x="235" y="142" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="14" letter-spacing="4" fill="#1b4d3e">ROYAL BRUNEI</text>
+
+                <!-- Forward Cabin Door -->
+                <rect x="200" y="138" width="22" height="44" rx="8" fill="none" stroke="#94a3b8" stroke-width="1.8" />
+                <rect x="206" y="146" width="10" height="14" rx="4" fill="url(#skyReflection)" stroke="#64748b" stroke-width="1" />
+
+                <!-- Swept Main Wing & Jet Engine -->
+                <path d="M 465 192 L 620 192 L 690 232 L 540 232 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" />
+                <rect x="435" y="206" width="88" height="36" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2" />
+                <rect x="435" y="218" width="88" height="6" fill="#d4af37" />
+                <path d="M 435 212 C 428 212, 428 236, 435 236 Z" fill="#334155" />
+
+                <!-- WINDOW 1 -->
+                <g class="plane-window-group">
+                    <path d="M 335 82 L 345 82 L 340 102 Z" fill="#d4af37" />
+                    <rect x="270" y="52" width="140" height="30" rx="6" fill="#1b4d3e" stroke="#d4af37" stroke-width="1.5" />
+                    <text x="340" y="72" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="bold" font-size="11" fill="#ffffff">Learn More →</text>
+                    <a href="discover.html" aria-label="Learn More">
+                        <rect class="window-pane" x="320" y="138" width="40" height="48" rx="16" fill="url(#skyReflection)" stroke="#1b4d3e" stroke-width="3.5" />
+                        <text x="340" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#1b4d3e">01</text>
+                    </a>
+                </g>
+
+                <!-- WINDOW 2 -->
+                <g class="plane-window-group">
+                    <path d="M 525 82 L 535 82 L 530 102 Z" fill="#d4af37" />
+                    <rect x="445" y="52" width="170" height="30" rx="6" fill="#1b4d3e" stroke="#d4af37" stroke-width="1.5" />
+                    <text x="530" y="72" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="bold" font-size="11" fill="#ffffff">Must Try Experiences →</text>
+                    <a href="attractions.html" aria-label="Must Try Experiences">
+                        <rect class="window-pane" x="510" y="138" width="40" height="48" rx="16" fill="url(#skyReflection)" stroke="#1b4d3e" stroke-width="3.5" />
+                        <text x="530" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#1b4d3e">02</text>
+                    </a>
+                </g>
+
+                <!-- WINDOW 3 -->
+                <g class="plane-window-group">
+                    <path d="M 715 82 L 725 82 L 720 102 Z" fill="#d4af37" />
+                    <rect x="650" y="52" width="140" height="30" rx="6" fill="#1b4d3e" stroke="#d4af37" stroke-width="1.5" />
+                    <text x="720" y="72" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="bold" font-size="11" fill="#ffffff">Travel Info →</text>
+                    <a href="visit.html" aria-label="Travel Info">
+                        <rect class="window-pane" x="700" y="138" width="40" height="48" rx="16" fill="url(#skyReflection)" stroke="#1b4d3e" stroke-width="3.5" />
+                        <text x="720" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#1b4d3e">03</text>
+                    </a>
+                </g>
+            </svg>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ministry of Tourism, Brunei Darussalam. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

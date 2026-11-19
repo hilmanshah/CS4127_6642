@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Expect | Brunei Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="brand-home-link">BRUNEI</a></li>
+                    <li><a href="discover.html">Learn More</a></li>
+                    <li><a href="attractions.html">Must Try Experiences</a></li>
+                    <li><a href="visit.html">Travel Info</a></li>
+                    <li><a href="contact.html" class="active">What to Expect</a></li>
+                    <li><button id="theme-toggle" class="theme-toggle">Dark Mode</button></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">What to Expect</h2>
+
+        <div class="contact-split">
+            <!-- Left Column: All 4 Annual Cultural Events with Images -->
+            <div class="events-timeline">
+                <h3 class="subsection-heading events-heading-left">Annual Cultural Events</h3>
+                <p class="events-intro-p">Hover over each event card to preview highlights from Brunei's vibrant annual calendar.</p>
+
+                <!-- Event 1 -->
+                <div class="visit-hover-card">
+                    <div class="visit-img-reveal">
+                        <img src="images/event-nationalday.jpeg" alt="Hari Kebangsaan Brunei National Day celebrations" class="lightbox-trigger img-national-day">
+                    </div>
+                    <div class="visit-hover-body">
+                        <span class="event-date">February 23 • Annual</span>
+                        <h3 class="fancy-header">Hari Kebangsaan Brunei National Day</h3>
+                        <p>Commemorating Brunei's national independence, the capital comes alive with magnificent flag displays, grand patriotic marches, synchronized field performances, and cultural showcases hosted at Taman Haji Sir Muda Omar Ali Saifuddien.</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="visit-hover-card">
+                    <div class="visit-img-reveal">
+                        <img src="images/event-ramadan.jpg" alt="Ramadan night food markets in Brunei" class="lightbox-trigger img-ramadan">
+                    </div>
+                    <div class="visit-hover-body">
+                        <span class="event-date">Ramadan & Syawal • Islamic Calendar</span>
+                        <h3 class="fancy-header">Ramadan Gerai & Hari Raya Open Houses</h3>
+                        <p>During the holy month of Ramadan, bustling evening bazaars (*Gerai Ramadan*) offer an array of traditional delicacies before sunset. Following Ramadan, *Hari Raya Aidilfitri* brings joyful open-house hospitality where homes and palaces welcome visitors with festive feasts.</p>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="visit-hover-card">
+                    <div class="visit-img-reveal">
+                        <img src="images/event-regatta.jpg" alt="Brunei Darussalam Regatta boat races on the Brunei River" class="lightbox-trigger">
+                    </div>
+                    <div class="visit-hover-body">
+                        <span class="event-date">August • Royal Waterfront</span>
+                        <h3 class="fancy-header">Brunei Darussalam Regatta</h3>
+                        <p>Held along the scenic Brunei River against the historic backdrop of Kampong Ayer, this thrilling traditional boat race features vibrantly decorated longboats and competitive rowing teams cheered on by enthusiastic crowds along the waterfront.</p>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="visit-hover-card">
+                    <div class="visit-img-reveal">
+                        <img src="images/event-festival.jpg" alt="Brunei December Festival cultural exhibitions" class="lightbox-trigger">
+                    </div>
+                    <div class="visit-hover-body">
+                        <span class="event-date">December • Nationwide</span>
+                        <h3 class="fancy-header">Brunei December Festival</h3>
+                        <p>A dynamic month-long celebration spanning all four districts featuring culinary carnivals, Islamic arts exhibitions, eco-tourism jungle expeditions, and family-friendly sports competitions designed for international travelers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Visitor Inquiry Form -->
+            <div class="contact-form-box">
+                <h2 class="fancy-header">Visitor Enquiries</h2>
+                <p>Have questions about planning your trip, guided eco-tours, or cultural etiquette? Send us a message and our tourism team will assist you promptly.</p>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Enquiry Topic</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Tourism Information</option>
+                            <option value="attractions">Attractions & Eco-Tours</option>
+                            <option value="visa">Visa & Entry Requirements</option>
+                            <option value="events">Cultural Events & Festivals</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can we help you plan your stay in Brunei?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Enquiry</button>
+                    <div id="form-feedback" class="form-feedback">Thank you! Your enquiry has been submitted successfully. Our team will respond shortly.</div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">×</span>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <footer>
+        <p>© 2026 Ministry of Tourism, Brunei Darussalam. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
